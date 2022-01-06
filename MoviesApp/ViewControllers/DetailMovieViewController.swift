@@ -37,17 +37,11 @@ class DetailMovieViewController: UIViewController {
     lazy var imdbRatingLabel = setupLabels(ofSize: 14)
     
     var film: Film!
-    var viewModel: FilmDetailViewModelProtocol! {
-        didSet {
-            titleLabel.text = viewModel.filmName
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         navigationItem.largeTitleDisplayMode = .never
-//        viewModel = FilmDetailViewModel(film: film)
         setupNavigationBar()
         setupSubViews(
             detailImage,
