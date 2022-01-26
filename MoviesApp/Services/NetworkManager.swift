@@ -18,7 +18,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     
     private var apiKinopoisk: String {
-        "https://cloud-api.kinopoisk.dev/movies/all/page/666/token/f0382ba36cd4be540a9f4b3678618ae1"
+        "https://cloud-api.kinopoisk.dev/movies/all/page/666/token/259fc895ca3d14bcf9697f3735f4eb03"
     }
     
     private init() {}
